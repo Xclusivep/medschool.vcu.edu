@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Details - dir  VCU School of Medicine</title>
+    <link type="image/x-icon" href="https://medschool.vcu.edu/media/vcu/favicons/favicon.ico" rel="icon"> <!-- Favicon -->
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../../../media/medschool2018/site-assets/css/bootstrap/bootstrap.css">
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!--jQuery-->
+    <script src="../../../../media/medschool2018/site-assets/js/jquery/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script>
+		var qmarkindex = document.location.href.indexOf("?");
+		var qstring = document.location.href.substring(qmarkindex+1);
+		var ID = qstring.split("=")[1]
+		var api_url = 'https://service.portfolio.som.vcu.edu/api/expertise-directory';
+		var api_profile =  "/getUserPicture/" + ID;
+		var api_picture =  "/getUserProfile/" + ID;
+
+		 $.getJSON( api_url + api_profile, function( result ) {
+    		 s = '';
+		     s += '{"@context": "https://schema.org"';
+    		 if (result.Personal.AcademicRank) s += ',"@type": "' + result.Personal.AcademicRank + '"';
+		     if (result.Personal.FullName) s += ',"name": "' + result.Personal.FullName + '"';
+    		 if (api_url + api_picture) s += ',"image": "' + api_url + api_picture + '"';
+		     s += ',"affiliation": "Virginia Commonwealth University VCU"';
+  		   if (result.Personal.Email) s += ',"email": "' + result.Personal.Email + '"';
+  		   if (result.Personal.Phone) s += ',"telephone": "' + result.Personal.Phone + '"';
+
+		     s += '}';
+		 $( "<script/>", {
+		   "type": "application/ld+json",
+		   "html": s
+		 }).appendTo( "head" );
+		});
+		</script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <!--Bootstrap-->
+    <script src="../../../../media/medschool2018/site-assets/js/boostrap/bootstrap.js"></script>
+    
+
+    
+    
+    <meta name="author" content="VCU School of Medicine">
+    <meta name="generator" content="TERMINALFOUR">
+
+    <link rel="stylesheet" href="../../../../media/medschool2018/site-assets/css/accordion.css"><!--accordion.css-->
+    <link rel="stylesheet" href="https://assets.som.vcu.edu/medschool/css/style.css" /><!--styles.css-->
+    <link rel="stylesheet" href="../../../../media/medschool2018/site-assets/css/profile.css" /><!--profiles.css--> <!-- added 01/30/2019 by mattesmj for output format -->
+        <script>
+          (function(d) {
+            var config = {
+              kitId: 'zmg0lpa',
+              scriptTimeout: 3000,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
+    <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-138037280-3', 'auto');
+  ga('send', 'pageview');
+
+</script><!-- Analytics -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NQRCNWC');</script>
+<!-- End Google Tag Manager -->
+<!-- GA4 Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B4ML1PYLS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B4ML1PYLS1');
+</script>
+<!-- End GA4 Analytics --><!--Analtyics Code-->
+
+    </head>
+
+    <body class=" faculty-dir-detail"> <!-- added faculty-dir-detail by mattesmj 02/11/19 -->
+      <div class="body-wrap">
+       <div class="som-skip-links" id="skip-links" role="complementary" aria-label="Skip links menu">
+    <a href="index.html#navbar-start" class="som-skip-links__content" tabindex="1">Skip to navigation</a>
+    <a href="index.html#content-start" class="som-skip-links__content" tabindex="2">Skip to content</a>
+    <a href="index.html#footer" class="som-skip-links__footer" tabindex="3" >Skip to footer</a>
+</div>
+       <!--** VCU campaign branding bar **-->
+<script type="text/javascript" src="https://branding.vcu.edu/bar/academic/latest.js" data-referrer="false"></script>
+<!--** VCU campaign branding bar **-->
+  <!-- COVID-19 ALERT BAR -->
+    <style>
+      .alertMessage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        background-color: #febe10;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+
+      .alertMessage-text {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .alertMessage-link {
+        font-size: 18px;
+        margin-left: 20px;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 5px 15px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .alertMessage-link:hover,
+      .alertMessage-link:focus {
+        background: black;
+        color: #febe10;
+      }
+    </style>
+<!--<div class="commencementBanner" role="complementary" aria-label="Graduation Announcements">
+    <div>
+      <p class="alertMessage-text">Match Day</p>
+    </div>
+    <div>
+      <p>Today at 11:15 a.m. | <a href="https://medschool.vcu.edu/education/medical-education/match-day-2023/" style="
+    margin-left: 0;
+    text-decoration: underline;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+"><strong>Watch livestream</strong></a></p>
+    </div>
+  </div>-->
+    <!-- END ALERT BAR -->
+<header class="section main-site-header">
+           <!-- ** Secondary navigation ** -->
+           <div class="container secondary-navigation is-fluid">
+               <nav class="navbar secondary-nav__navbar" role="navigation" aria-label="secondary navigation">
+                   <div class="navbar-menu is-feature-font">
+                       <div class="navbar-end">
+                               <a class="navbar-item vcu-health-logo"  href="https://www.vcuhealth.org/">
+  
+<img src="../../../../media/medschool2018/site-assets/img/vcu-health-logo.png" alt="Visit VCU Health website" />
+
+
+  <span>VCU Health</span>
+</a>
+
+ <!--Health Logo and Link-->
+                               <a target='_blank' href="https://my.vcu.edu/">MyVCU</a>
+<a target='_blank' href="https://portfolio.som.vcu.edu/">Portfolio</a>
+<a  href="https://medschool.vcu.edu/giving/alumni/">Alumni</a>
+<a target='_blank' href="http://www.support.vcu.edu/give/medicine/giving/alumni/">Make a Gift</a>
+<a  href="https://medschool.vcu.edu/about/departments/">Departments</a><!--Output Quicklinks-->
+                               <div class="navbar-item has-dropdown secondary-nav__audience-menu">
+                                   <a class="navbar-link" href="javascript:void(0)">Information for...
+                                       <span class="icon icon--svg has-icon-white show-more-icon">
+                                           <svg>
+                                               <use xlink:href="#menu-dots--down" />
+                                           </svg>
+                                       </span>
+                                       <span class="icon icon--svg has-icon-gray-32 show-less-icon">
+                                           <svg>
+                                               <use xlink:href="#x-icon--fat" />
+                                           </svg>
+                                       </span>
+                                   </a>
+                                   <div class="navbar-dropdown ">
+                                      <a  href="https://medschool.vcu.edu/education/">Prospective Students</a>
+<a  href="https://medschool.vcu.edu/education/graduate/current-students/">Current Students</a>
+<a  href="https://medschool.vcu.edu/education/gme/">Residents &amp; Fellows</a>
+<a  href="https://medschool.vcu.edu/giving/alumni/">Alumni</a>
+<a target='_blank' href="https://vcuhealth.org">Patients</a>
+<a target='_blank' href="https://cme.vcuhealth.org">Healthcare Professionals</a>
+<a  href="https://medschool.vcu.edu/about/deans-office/facultyaffairs/">Faculty</a>
+
+
+
+
+<!--Output Inforamtion For links-->
+                                   </div>
+                               </div>
+                       </div><!-- // .navbar-end -->
+                   </div><!-- // .navbar-menu -->
+               </nav><!-- // .navbar.secondary-nav -->
+           </div><!-- // .container.secondary-nav -->
+           <!-- ** // Secondary navigation ** -->
+           <!-- ** Main navigation ** -->
+           <div class=" main-navigation">
+               <nav class="navbar main-navigation__navbar" role="navigation" aria-label="Main site navigation">
+                   <div class="navbar-brand" >
+                      <div class="navbar-item main-nav-toggle__mobile mobile-nav-toggle" >
+                              <a class="navbar-link" href="javascript:void(0)" tabindex="1" title="mobile menu button">
+                               <span class="icon icon--svg has-icon-gray-32 show-more-icon">
+                                       <svg>
+                                           <use xlink:href="#menu" />
+                                       </svg>
+                               </span>
+                               <span class="icon icon--svg has-icon-gray-32 show-less-icon main-nav-close-icon">
+                                       <svg>
+                                           <use xlink:href="#x-icon--fat" />
+                                       </svg>
+                               </span>
+                              </a>
+                       </div><!-- // .navbar-burger -->
+                       <div class="navbar-item som-logo" style="font-size: 1rem; color: #939393; font-weight: 400">
+                           <a href="https://medschool.vcu.edu/" tabindex="2" >VCU School of Medicine</a>
+                       </div><!-- // .som-logo -->
+
+                       <div class="navbar-item secondary-nav-toggle--mobile mobile-nav-toggle" >
+                           <a class="navbar-link"  tabindex="4">
+                               <span class="icon icon--svg has-icon-gray-32 show-more-icon">
+                                   <svg>
+                                       <use xlink:href="#menu-dots--down" />
+                                   </svg>
+                               </span>
+                               <span class="icon icon--svg has-icon-gray-32 show-less-icon main-nav-close-icon">
+                                   <svg>
+                                       <use xlink:href="#x-icon--fat" />
+                                   </svg>
+                               </span>
+                           </a>
+                       </div><!-- // .secondary-nav--mobile -->
+                       <div class="navbar-item site-search-toggle--mobile mobile-nav-toggle">
+                        <a class="navbar-link"  tabindex="4">
+                            <span class="icon icon--svg has-icon-gray-32 show-more-icon">
+                                 <svg>
+                                     <use xlink:href="#search" />
+                                 </svg>
+                            </span>
+                            <span class="icon icon--svg has-icon-gray-32 show-less-icon main-nav-close-icon">
+                                 <svg>
+                                     <use xlink:href="#x-icon--fat" />
+                                 </svg>
+                            </span>
+                        </a>
+                       </div><!-- // .navbar-end.main-navigation__search -->
+                   </div><!-- // .navbar-brand -->
+                   <!-- ** Secondary nav for mobile ** -->
+                   <div class="navbar-menu secondary-nav--mobile__menu">
+                       <div class="navbar-end secondary-nav--mobile__links">
+                               <a class="navbar-link secondary-nav--mobile__link vcu-health-logo" href="https://www.vcuhealth.org/default.aspx">
+                                   <img src="../../../../media/medschool2018/site-assets/img/vcu-health-logo.png" alt="Visit VCU Health website" />
+                                   <span>MyVCU</span>
+                               </a>
+                               <a  href="https://medschool.vcu.edu/education/">Prospective Students</a>
+<a  href="https://medschool.vcu.edu/education/graduate/current-students/">Current Students</a>
+<a  href="https://medschool.vcu.edu/education/gme/">Residents &amp; Fellows</a>
+<a  href="https://medschool.vcu.edu/giving/alumni/">Alumni</a>
+<a target='_blank' href="https://vcuhealth.org">Patients</a>
+<a target='_blank' href="https://cme.vcuhealth.org">Healthcare Professionals</a>
+<a  href="https://medschool.vcu.edu/about/deans-office/facultyaffairs/">Faculty</a>
+
+
+
+
+<!--Common Header Quicklinks Mobile-->
+                               <div class="navbar-item secondary-nav__audience-menu">
+                                   <a class="navbar-link secondary-nav--mobile__link audience-link has-dropdown" href="javascript:void(0)">Information for...
+                                       <span class="icon icon--svg has-icon-white">
+                                           <svg class=" show-more-icon">
+                                               <use xlink:href="#plus_icon" />
+                                           </svg>
+                                           <svg class=" show-less-icon">
+                                               <use xlink:href="#minus_icon" />
+                                           </svg>
+                                       </span>
+                                   </a>
+                                   <div class="navbar-dropdown secondary-nav__dropdown">
+                                      <a  href="https://medschool.vcu.edu/education/">Prospective Students</a>
+<a  href="https://medschool.vcu.edu/education/graduate/current-students/">Current Students</a>
+<a  href="https://medschool.vcu.edu/education/gme/">Residents &amp; Fellows</a>
+<a  href="https://medschool.vcu.edu/giving/alumni/">Alumni</a>
+<a target='_blank' href="https://vcuhealth.org">Patients</a>
+<a target='_blank' href="https://cme.vcuhealth.org">Healthcare Professionals</a>
+<a  href="https://medschool.vcu.edu/about/deans-office/facultyaffairs/">Faculty</a>
+
+
+
+
+<!--Common Header Information for links Mobile-->
+                                   </div>
+                               </div>
+                       </div><!-- // .navbar-end -->
+                   </div><!-- // .navbar-menu -->
+                   <!-- ** // Secondary nav for mobile ** -->
+                   <!-- ** Main nav menu ** -->
+                   <div class="navbar-menu main-navigation__menu">
+                       <div class="navbar-start" id="navbar-start" >
+                         <div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/education/">Education
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown has-two-cols " style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">Education</h2> 
+        <p class="nabar-dropdown__intro">Your further study options at VCU School of Medicine</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/medical-education/">Medical Education</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/">Graduate Education</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/phd-programs/">Ph.D. Programs</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/bsdp/">Biomedical Sciences Doctoral Portal </a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/ms-programs/">Master of Science Programs </a>
+        
+        
+        
+      </div><!-- // .navbar-dropdown__links -->
+      
+          
+          
+         
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/dual-degree/">Dual Degree Options </a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/certificate-programs/">Certificate and Post-Baccalaureate Programs </a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/gme/">Graduate Medical Education </a>
+        <a class="navbar-link navbar-dropdown__link" target='_blank' tabindex="3" href="https://www.vcuhealth.org/Explore-VCU-Health/For-Health-Professionals/Education/continuing-education">Continuing Medical Education</a>
+        
+        
+        
+        
+</div>
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End Education -->
+<div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/admissions/">Admissions
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown  has-feature" style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">Admissions</h2> 
+        <p class="nabar-dropdown__intro">Apply to VCU School of Medicine.</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/admissions/md/">M.D. Program Admissions</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/phd-programs/#d.en.476685">Ph.D. Programs Admissions</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/ms-programs/#d.en.480378">Master's Programs Admissions</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/dual-degree/#d.en.480900">Combined/Dual Degree Programs Admissions</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/education/graduate/certificate-programs/#d.en.481271">Certificate Opportunities Admissions</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/admissions/graduate-medical-education-admissions/">Graduate Medical Education Admissions</a>
+        
+        
+      </div><!-- // .navbar-dropdown__links -->
+      <div class="navbar-dropdown__feature">
+        <div class="card--flat card--dark">
+          <div class="card-image">
+            <a class="card__anchor"  href="https://medschool.vcu.edu/admissions/#d.en.273432" title="Apply to programs in the VCU School of Medicine">
+              <figure class="image is-2by1">
+                <img alt="Apply to programs in the VCU School of Medicine" src="../../../../media/medschool/images/new-admissions-site/fDSC_8651byKevinSchindler.jpg">
+              </figure>
+              <div class="image-overlay "></div>
+            </a>
+          </div>
+          <div class="card-content"> 
+            <a class="card__anchor"  tabindex="3" href="https://medschool.vcu.edu/admissions/#d.en.273432" title="Apply to programs in the VCU School of Medicine">
+              <h2 class="card-heading">Apply to programs in the VCU School of Medicine</h2>
+                <p>The VCU School of Medicine offers a variety of first professional and graduate advanced degree programs.
+View our video gallery and hear what our students are saying about their experience at VCU School of Medicine!</p>
+              <p class="card-content__read-more" >Find out more
+                <span class='icon icon--svg is-inline-icon--large-text has-icon-white'>
+                  <svg>
+                    <use xlink:href='#next_arrow' />
+                  </svg>
+                </span>
+              </p>
+            </a>
+           </div>
+         </div>
+       </div>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End Admissions -->
+<div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/research/">Research
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown  " style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">Research</h2> 
+        <p class="nabar-dropdown__intro">Our commitment to research at the Virginia Commonwealth University School of Medicine is evident through our growing faculty size and graduate school enrollment.</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/research/#d.en.435481">Research Highlights</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/research/#d.en.381542">Funding Opportunities</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/research/#d.en.432756">Facilities &amp; Resources</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/research/#d.en.381307">Research Opportunities</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/research/researchadmin/">Research Administration</a>
+        
+        
+        
+      </div><!-- // .navbar-dropdown__links -->
+      
+          
+          
+         
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End Research -->
+<div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/giving/">Giving
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown  has-feature" style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">Giving</h2> 
+        <p class="nabar-dropdown__intro">Giving to VCU School of Medicine</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/alumni/">Alumni</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/funding/">Funding Priorities</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/#d.en.313877">How to give</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/alumni/#d.en.314068">Publications</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/#d.en.314069">Upcoming Special Events</a>
+        
+        
+        
+      </div><!-- // .navbar-dropdown__links -->
+      <div class="navbar-dropdown__feature">
+        <div class="card--flat card--dark">
+          <div class="card-image">
+            <a class="card__anchor" target=&#39;_blank&#39; href="https://www.support.vcu.edu/give/medicine" title="Giving to VCU School of Medicine">
+              <figure class="image is-2by1">
+                <img alt="Giving to VCU School of Medicine" src="../../../../media/medschool/galleries/white-coat-ceremony-2016/mDSC_8716byKevinSchindler-1264x873.jpg">
+              </figure>
+              <div class="image-overlay "></div>
+            </a>
+          </div>
+          <div class="card-content"> 
+            <a class="card__anchor" target=&#39;_blank&#39; tabindex="3" href="https://www.support.vcu.edu/give/medicine" title="Giving to VCU School of Medicine">
+              <h2 class="card-heading">Giving to VCU School of Medicine</h2>
+                <p>Thank you for your interest in making a gift to the School of Medicine.</p>
+              <p class="card-content__read-more" >Donate Now
+                <span class='icon icon--svg is-inline-icon--large-text has-icon-white'>
+                  <svg>
+                    <use xlink:href='#next_arrow' />
+                  </svg>
+                </span>
+              </p>
+            </a>
+           </div>
+         </div>
+       </div>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End Giving -->
+<div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/about/">About
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown has-two-cols " style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">About</h2> 
+        <p class="nabar-dropdown__intro">About VCU School of Medicine</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/mission/">Mission</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/history/">History</a>
+        
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/departments/">Departments &amp; Centers</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/deans-office/">Dean's Office</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/portfolio/">Faculty Expertise Directory</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/dei/">Diversity, Equity and Inclusion</a>
+        
+      </div><!-- // .navbar-dropdown__links -->
+      
+          
+          
+         
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/rva/">About RVA</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/about/strategic-plan/">Strategic Plan</a>
+        
+        
+        
+        
+        
+        
+</div>
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End About -->
+<div class="navbar-item main-navigation__item  has-dropdown">
+  <a class="navbar-link navbar-link--main" tabindex="3" href="https://medschool.vcu.edu/news/">News
+    <span class="icon icon--svg mobile-nav-toggle has-icon-primary">
+      <svg class="show-more-icon">
+        <use xlink:href="#plus_icon" />
+      </svg>
+      <svg class="show-less-icon">
+        <use xlink:href="#minus_icon" />
+      </svg>
+    </span>
+    <span class="icon icon--svg is-inline-icon--large-text main-nav-toggle has-icon-primary">
+      <svg class="">
+        <use xlink:href="#down_arrow" />
+      </svg>
+    </span>
+  </a>
+  <div class="navbar-dropdown has-two-cols " style="display:none;display: block;" >
+    <div class="navbar-dropdown__header">
+      <div class="navbar-dropdown__text">
+        <h2 class="is-feature-font--serif navbar-dropdown__heading">News</h2> 
+        <p class="nabar-dropdown__intro">See what's happening at VCU School of Medicine.</p>    
+      </div>
+    </div>
+    <div class="navbar-dropdown__body">
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/news/stories/">Discover Medicine and Science</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/news/som-dean/">Message from the Dean</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/news/somprofiles/">School of Medicine Profiles</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/news/photo-galleries/">Photogalleries</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/news/12th-and-marshall/">12th &amp; Marshall</a>
+        <a class="navbar-link navbar-dropdown__link"  tabindex="3" href="https://medschool.vcu.edu/giving/alumni/#d.en.313472">Quarterly Email Newsletter</a>
+        <a class="navbar-link navbar-dropdown__link" target='_blank' tabindex="3" href="https://news.vcu.edu">VCU News</a>
+        
+      </div><!-- // .navbar-dropdown__links -->
+      
+          
+          
+         
+      <div class="navbar-dropdown__links">
+        <a class="navbar-link navbar-dropdown__link" target='_blank' tabindex="3" href="https://events.vcu.edu/">MCV Campus Events</a>
+        
+        
+        
+        
+        
+        
+        
+</div>
+      </div><!-- // .navbar-dropdown__body -->
+    </div>
+</div><!--End News -->
+ <!--Common Header Mega Menu-->
+                       </div><!-- // .navbar-start -->
+                   </div><!-- // .navbar-menu.main-navigation__menu -->
+                   <div class="navbar-end main-navigation__search-toggle " >
+                           <div class="navbar-item has-dropdown">
+                               <a class="navbar-link is-vision-angle--right"  tabindex="4">
+                                    <span class="icon icon--svg has-icon-gray-32 show-more-icon">
+                                         <svg>
+                                             <use xlink:href="#search" />
+                                         </svg>
+                                    </span>
+                                    <span class="icon icon--svg has-icon-gray-32 show-less-icon">
+                                         <svg>
+                                             <use xlink:href="#x-icon--fat" />
+                                         </svg>
+                                    </span>
+                                </a>
+                           </div>
+                   </div><!-- // .navbar-end.main-navigation__search-toggle -->
+                   <div class="site-search-form ">
+  <div class="site-search-form__close">
+    <a href="javascript:void(0)">
+      Close 
+      <span class="icon icon--svg has-icon-gray-32 show-less-icon main-nav-close-icon">
+       <svg>
+         <use xlink:href="#x-icon--fat"></use>
+       </svg>
+     </span>
+  </a>
+</div>
+  <form id="som-site-earch-form" action="index.html#" method="get" name="keyword">
+                          <div class="site-search-form__inputs">
+                              <label class="sr-only is-hidden" for="searchquery">Search</label>
+                              <input id="searchquery" maxlength="255" name="query" onfocus="" placeholder="Search VCU" type="text">                         
+                              <label class="sr-only is-hidden" for="search_go">Search</label>
+                              <button id="search_go" name="search_go" aria-label="Go" value="Go" type="submit">
+                                 <span class="icon icon--svg has-icon-gray-32">
+                                     <svg>
+                                         <use xlink:href="#search" />
+                                     </svg>
+                                 </span> 
+                              </button>
+                          </div><!-- // .site-search-form__inputs -->
+                          <p class="section__label">Filters:</p>
+                          <fieldset  aria-label="VCU Site search filters"> 
+                             <legend>VCU Site search filters</legend>
+                             <div class="site-search-form__filters">
+                                  <input class="site-search-form__filter" id="vcu"  name="searchnav" title="Choose from one of the options" type="radio" value="vcu">
+                                  <label class="site-search-form__filter_label" for="vcu"><a  href="https://search.vcu.edu">VCU</a></label>
+                                  <input class="site-search-form__filter" id="people" name="searchnav" title="Choose from one of the options" type="radio" value="people">
+                                  <label class="site-search-form__filter_label" for="people"><a href="https://search.vcu.edu">VCU people</a></label>
+                                  <input class="site-search-form__filter" checked="checked" id="somweb" name="searchnav" title="Choose from one of the options" type="radio" value="som">
+                                  <label class="site-search-form__filter_label" for="somweb"><a href="https://search.vcu.edu">SOM Web</a></label>           
+                             </div><!-- // .site-search-form__filters -->
+                          </fieldset><!-- // .site-search-form__filters -->
+                    </form>
+</div><!--Output Search code-->
+               </nav><!-- // .navbar.main-navigation__navbar -->
+           </div><!-- // .container.main-navigation  -->
+           <!-- ** // Main navigation ** -->
+       </header><!-- // .main-site-header -->
+        <!--Return Hero Image/Video-->
+        <!--Return Slideshow content-->
+       <span id="main-content-start" style="visibility: hidden;"></span>
+<style media="screen, print">
+  .emp-profile {
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.profile-img {
+  text-align: center;
+}
+.profile-img img {
+  width: 100%;
+  height: auto;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-head h5 {
+  color: #333;
+}
+.profile-head h6 {
+  color: #0062cc;
+}
+.profile-edit-btn {
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.proile-rating {
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+.profile-head .nav-tabs {
+  margin-bottom: 5%;
+}
+.profile-head .nav-tabs .nav-link {
+  font-weight: 600;
+  border: none;
+}
+.profile-head .nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #0062cc;
+}
+.profile-work {
+  padding: 14%;
+  margin-top: -10%;
+}
+.profile-work p {
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.profile-work a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-work ul {
+  list-style: none;
+}
+.profile-tab label {
+  font-weight: 600;
+}
+.profile-tab p {
+  font-weight: 600;
+  color: #0062cc;
+}
+a span.text-secondary{
+  text-decoration:underline;
+}
+a span.text-secondary:hover{
+  text-decoration: none;
+}
+.row {
+  padding:15px 0px;
+}
+.row.first {
+padding: 50px 50px 20px 50px
+}
+.row.first .col-md-5 {
+  padding-top: 20px;
+}
+hr {
+  height:3px;
+  background-color:#00504d;
+}
+#PrintPage a {
+  text-decoration: underline;
+}
+#myTabContent .row:nth-child(2n+1){
+  background-color:hsl(180,10%,92.5%);
+}
+.card-body {
+  padding: 0;
+}
+p.Bio {
+  margin-bottom: 0px;
+}
+
+/*START Expandable Bio*/
+/* .profile-head .collapse, .profile-head .collapsing {
+  height: 9rem;   [NUM_OF_LINES] x [LINE_HEIGHT] 
+}
+.profile-head .collapse {
+  position: relative;  /* For ...'s content absolute positioning 
+  display: block;
+  overflow: hidden;
+}
+.profile-head .collapse:before {
+  content: ' ...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.profile-head .collapse.show {
+  height: auto;  /* You need to reset the height when not collapsed 
+}
+.profile-head .collapse.show:before {
+  display: none;  /* Of course you don't want to display ... 
+}
+.profile-head a[aria-expanded="false"].collapsed:after {
+  content: '+ Show More';
+}
+.profile-head a[aria-expanded="true"]:not(.collapsed):after {
+  content: '- Show Less';
+} */
+/*END Expandable Bio*/
+
+/*START Expandable Bio*/
+.Bio.complete{
+  display:none;
+}
+.show.less{
+  display:none;
+}
+/*END Expandable Bio*/
+
+img.p-worksite, img.c-worksite {
+  float:right;
+  padding-left: 5px;
+  max-width:10%;
+}
+
+@media print {
+  .tab-content > .tab-pane {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .profile-img img {
+    width:70%;
+  }
+  .collapse {
+    display: block !important;
+    height: auto !important;
+}
+}
+
+a.printButton {
+font-weight: bold;
+font-size: 1.2rem;
+padding: .5rem 1rem;
+background-color: #184d4b;
+color: white !important;
+border-radius: 4px;
+}
+
+a.printButton:hover {
+background-color: #3c7573;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #3c7573;
+    border: none;
+}
+
+.nav-justified .nav-item {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+div[role="tabpanel"] ul li {
+margin-bottom: .9rem;
+}
+
+</style>
+<div class="container emp-profile">
+<div class="facexpdir-content">
+                <div class="row first">
+                    <div class="col-md-5">
+                        <div class="profile-img">
+                            <img src="index.html" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="profile-head">
+                                    <h1 class="Name"></h1>
+                                    <h3 class="Appointment" style="white-space: pre-line;"></h3>
+                                    <hr>
+                                    <p class="Department"><strong>Department:</strong> </p>
+                                    <div id="profileBio">
+                                      <p class="Bio teaser"><strong>Bio:</strong> </p>
+                                      <p class="Bio complete"><strong>Bio:</strong> </p>
+                                      <p><a class="show more" style="display:block !important;float:right;">+ Show More</a></p>
+                                      <p><a class="show less" style="float:right;">- Show less</a></p>
+                                      <!-- <p><a role="button" class="collapsed more" data-toggle="collapse" href="#profileBio" aria-expanded="false" aria-controls="collapseExample" style="display:block !important;float:right;">+ Show More</a></p> -->
+                                    </div>
+                                       
+
+                                    <p class="Address"><strong>Address:</strong> </p>
+                                    <p id="contact">
+                                        <span style="clear:both; display:block;"><strong>Contact:</strong></span>
+                                        <span class="Email"><strong>&nbsp;Email:</strong> </span>
+                                        <span class="Phone"><strong>&nbsp;Phone:</strong> </span>
+                                        <span class="Fax"><strong>&nbsp;Fax:</strong> </span>
+                                    </p>
+                                    <p class="Keywords"><strong>Keywords:</strong> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-4 border-bottom border-top pb-2 pt-2">
+                    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link active show" data-toggle="tab" href="index.html#Education" role="tab" aria-controls="Education" aria-selected="true">Education and Training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="index.html#Presentations" role="tab" aria-controls="Presentations" aria-selected="false">Teaching and Presentations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="index.html#ClinicalPractice" role="tab" aria-controls="ClinicalPractice" aria-selected="false">Clinical Practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="index.html#Research" role="tab" aria-controls="Research" aria-selected="false">Research and Publications</a>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Publications" role="tab" aria-controls="Publications" aria-selected="false">Publications</a>
+                            </li> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="index.html#ProfessionalMemberships" role="tab" aria-controls="ProfessionalMemberships" aria-selected="false">Professional Memberships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="index.html#AwardandHonors" role="tab" aria-controls="AwardandHonors" aria-selected="false">Awards and Honors</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-7 order-md-last mt-4 border-top pt-2 card" style="padding-top: 0 !important; height:100%;">
+                    <div class="card-body">
+                      <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade in active show" id="Education" role="tabpanel" aria-labelledby="Education-tab"></div>
+                          <div class="tab-pane fade" id="ClinicalPractice" role="tabpanel" aria-labelledby="ClinicalPractice-tab"></div>
+                          <div class="tab-pane fade" id="Research" role="tabpanel" aria-labelledby="Research-tab"></div>
+                          <div class="tab-pane fade" id="AwardandHonors" role="tabpanel" aria-labelledby="AwardandHonors-tab"></div>
+                          <div class="tab-pane fade" id="ProfessionalMemberships" role="tabpanel" aria-labelledby="ProfessionalMemberships-tab"></div>
+                          <div class="tab-pane fade" id="Presentations" role="tabpanel" aria-labelledby="Presentations-tab"></div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="profile-work">
+                          <ul id="Tags">
+                            <ul id="Worksites" style="padding-left:0;">
+                              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"><h6 class="mb-0"><strong>Worksite:</strong></h6></li>
+                            </ul>
+                            <ul id="Websites" style="padding-left:0;">
+                              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"><h6 class="mb-0"><strong>Website:</strong></h6></li>
+                            </ul>
+                          </ul>
+                        </div>
+                  </div>
+                </div>
+<div class="row" style="justify-content: end; padding-top: 0;
+padding-right: 9%;">
+<div class="col-md-7 order-md-last mt-4 border-top pt-2" style="text-align: right; border-top: 0px solid red !important; margin-top: 0 !important;">
+                      <a class="printButton" onclick="window.print()">Print Page</a></strong>
+</div>
+</div>
+                </div>
+        </div><style>
+@media print { 
+.col-md-12.mb-4.border-bottom.border-top.pb-2.pt-2 {
+display: none !important;
+}
+}
+</style><div id="portfolioID" data-internalid=""></div>
+<div id="portfolioAPI" data-internalid="https://service.portfolio.som.vcu.edu"></div>
+<script src="https://assets.som.vcu.edu/medschool/js/fares/details.js"></script><!--Return Flyout content-->
+      <footer class="section vcu-som-footer" id="footer" aria-label="VCU School of Medicine contact and other links">
+        <div class="container is-fluid footer__container">
+            <div class="columns footer__columns">
+                <div class="column footer__address">
+                  <div id="brand-image" style="padding-bottom:10px;"><img src="../../../../media/medschool2018/site-assets/img/default-images/branding/bm_SchoolOfMedicine_RF_st_4c_rev.png" alt="" style="width:1653px; height:auto;    " /></div>
+                    <h2 class="footer__heading footer__school-name is-feature-font--serif">Virginia Commonwealth University School of Medicine</h2>
+                   <p><a href="https://www.vcu.edu" target="_blank" rel="noopener">Virginia Commonwealth University</a><br />VCU Medical Center<br />1201 E Marshall St #4-100<br />Richmond, VA 23298</p>
+                    <p>
+                        <a href="https://medschool.vcu.edu/about/deans-office/">Contact Us</a>
+                        <span class="icon icon--svg is-inline-icon has-icon-white">
+                            <svg>
+                                <use xlink:href="#next_arrow" />
+                            </svg>
+                        </span>       
+                    </p>
+                    
+                </div><!-- // Address column -->
+                
+                <div class="column footer__links">
+                    <h2 class="footer__heading is-feature-font">Basic Health Science Departments</h2> 
+                    <ul class="singleline">
+<li><a href="http://www.anatomy.vcu.edu" target="_blank" rel="noopener">Anatomy and Neurobiology</a></li>
+<li><a href="http://www.biochemistry.vcu.edu" target="_blank" rel="noopener">Biochemistry and Molecular Biology</a></li>
+<li><a href="http://www.gen.vcu.edu/" target="_blank" rel="noopener">Human and Molecular Genetics</a></li>
+<li><a href="https://microbiology.vcu.edu" target="_blank" rel="noopener">Microbiology and Immunology</a></li>
+<li><a href="http://pharmtox.vcu.edu" target="_blank" rel="noopener">Pharmacology and Toxicology</a></li>
+<li><a href="http://www.physiology.vcu.edu/" target="_blank" rel="noopener">Physiology and Biophysics</a></li>
+</ul>
+                </div><!-- // .footer__links.column -->
+                <div class="column footer__links">
+                    <h2 class="footer__heading is-feature-font">Clinical Departments</h2>
+                  <ul class="singleline">
+<li><a href="http://www.anesthesiology.vcu.edu/" target="_blank" rel="noopener">Anesthesiology</a></li>
+<li><a href="http://www.dermatology.vcu.edu/" target="_blank" rel="noopener">Dermatology</a></li>
+<li><a href="http://www.emergencymedicine.vcu.edu/" target="_blank" rel="noopener">Emergency Medicine</a></li>
+<li><a href="http://www.familymedicine.vcu.edu/" target="_blank" rel="noopener">Family Medicine and Population Health</a></li>
+<li><a href="http://www.intmed.vcu.edu/" target="_blank" rel="noopener">Internal Medicine</a></li>
+<li><a href="http://www.neurology.vcu.edu" target="_blank" rel="noopener">Neurology </a></li>
+<li><a href="http://www.neurosurgery.vcu.edu/" target="_blank" rel="noopener">Neurosurgery</a></li>
+<li><a href="http://www.obgyn.vcu.edu/" target="_blank" rel="noopener">Obstetrics and Gynecology</a></li>
+<li><a href="http://eye.vcu.edu/" target="_blank" rel="noopener">Ophthalmology</a></li>
+<li><a href="http://www.orthopaedics.vcu.edu/index.html" target="_blank" rel="noopener">Orthopaedic Surgery</a></li>
+<li><a href="http://ent.vcu.edu/" target="_blank" rel="noopener">Otolaryngology</a></li>
+<li><a href="http://www.pathology.vcu.edu/" target="_blank" rel="noopener">Pathology</a></li>
+<li><a href="https://pediatrics.vcu.edu/" target="_blank" rel="noopener">Pediatrics</a></li>
+<li><a href="http://www.pmr.vcu.edu/" target="_blank" rel="noopener">Physical Medicine and Rehabilitation</a></li>
+<li><a href="https://psych.vcu.edu/" target="_blank" rel="noopener">Psychiatry</a></li>
+<li><a href="https://radonc.vcu.edu/" target="_blank" rel="noopener">Radiation Oncology</a></li>
+<li><a href="http://www.radiology.vcu.edu/" target="_blank" rel="noopener">Radiology</a></li>
+<li><a href="http://www.surgery.vcu.edu/" target="_blank" rel="noopener">Surgery</a></li>
+</ul>
+                </div>
+                <div class="column footer__social">
+                    <h2 class="footer__heading is-feature-font">Social Media</h2>
+                    <div class="footer__social-icons">
+                        <a target="_blank" href="https://www.facebook.com/VCUSOM/" title="Follow us on Facebook" alt="Follow us on Facebook" aria-label="Follow us on Facebook">
+                            <span class="icon icon--svg">     
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-logo"></use>     
+                                </svg>
+                            </span>  
+                        </a>
+                        <a target="_blank" href="https://twitter.com/vcuhealth" title="Follow us on Twitter" alt="Follow us on Twitter" aria-label="Follow us on Twitter">
+                            <span class="icon icon--svg"> 
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter-logo"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/vcuhealth/" title="Follow us on Instagram" alt="Follow us on Instagram" aria-label="Follow us on Instagram">
+                            <span class="icon icon--svg"> 
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#intagram-logo"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCH5oaWuG4tpc3kWjAmizdag" title="Follow us on YouTube" alt="Follow us on YouTube" aria-label="Follow us on YouTube">
+                            <span class="icon icon--svg">
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#youtube-logo"></use>
+                                </svg>
+                            </span>     
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/school/virginia-commonwealth-university-school-of-medicin/" title="Follow us on Linkedin" alt="Follow us on Linkedin" aria-label="Follow us on Linkedin">
+                            <span class="icon icon--svg">
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin-logo"></use>
+                                </svg>
+                            </span>     
+                        </a>
+                        
+                    </div>
+                </div>
+<!--              <script>
+                $(document).ready(function() {
+                  var SoMBrandImage = '<img src="/media/medschool2018/site-assets/img/default-images/branding/bm_SchoolOfMedicine_RF_st_4c_rev.png" alt="" style="width:1653px; height:auto;    " />';
+                  var LiverBrandImage = '<img src="/media/liver-institute/VCUSOMStravitz-SanyalInstituteforLiverDiseaseandMetabolicHealth.png" alt="" style="width:2674px; height:auto;    " />';
+                  var siteHostName = $(location).attr('hostname');
+                  if (siteHostName == 'liverinstitute.medschool.vcu.edu' || siteHostName == 'liverinstitute.staging2.vcu.edu' ) {
+                    $('#brand-image').empty().html(LiverBrandImage);
+                  };
+                });
+
+              </script>--><!--Return common footer-->
+      </div><!-- // .columns.footer__columns -->
+            <div class="columns footer__meta-links">
+                <div class="column">
+                    <p><a href="https://www.vcu.edu/privacy-statement/">Privacy</a> | <a href="https://accessibility.vcu.edu/">Accessibility</a> | <a href="mailto:webmaster@vcu.edu">Webmaster</a></p>
+                    <p>Last Updated: 03/30/2023 <a class="t4Edit-page" href="https://t4.vcu.edu/terminalfour/page/directEdit#edit/583/en/133871">Edit</a></p>
+                  	<p><a href="https://text.vcu.edu/tt/referrer">View text version</a></p>
+                </div>
+            </div>
+        </div><!-- // footer .container -->
+    </footer><!-- // footer -->
+      <section class="som-lightbox" aria-label="School of Medicine Media viewer">
+            <div class="som-lightbox-container">
+               <div class="som-lightbox-column">
+                    <a href="javascript:void(0)" class="som-lightbox__close">
+                        <span class="icon icon--svg icon--svg--has-text has-icon-white ">
+                            <svg>
+                                <use xlink:href="#x-icon" />
+                            </svg>
+                             <span class="icon-text">Close</span> 
+                        </span>
+                    </a>
+                    <div class="som-lightbox__player">
+
+
+                    </div>
+                </div><!-- // .som-lightbox-gallery -->
+              <div class="background-filler" style="position: absolute;left: 0;width: 100%;height: 100%;z-index: -1;"></div>
+            </div><!-- // .som-lightbox-container -->
+        </section> 
+    </div><!-- // .body-wrap -->
+<!--   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!----jquery-3.2.1.min.js-->
+<script type="text/javascript" src="../../../../media/medschool2018/site-assets/js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../../../../media/medschool2018/site-assets/js/t4-scripts.js"></script> <!----t4-scripts.js-->
+		<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://assets.som.vcu.edu/medschool/js/main.js"></script>
+    </body>
+</html>

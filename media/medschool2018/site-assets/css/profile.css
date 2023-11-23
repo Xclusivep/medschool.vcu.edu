@@ -1,0 +1,2003 @@
+.som-profile-section {padding-bottom: 2rem;} /*rule added 11/1/2018 by agcarroll*/
+
+.section.vcu-som-footer,
+.section.feature-section.text-feature.has-section-nav,
+.som-profile-section {
+    clear: both;
+}
+
+.som-profile-section .cards-columns .column {
+    width: 50% ;
+    max-width: 50%;
+    float: left;
+    display: inline-block;
+    -webkit-flex-basis: 20%;
+    flex-basis: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .som-profile-section .cards-columns .column {    
+    width: 33% !important;    
+    max-width: 33% !important;    
+    -webkit-flex-basis: 33% !important;
+    flex-basis: 33% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .som-profile-section .cards-columns .column {    
+    width: 25% !important;    
+    max-width: 25% !important;
+    -webkit-flex-basis: 25% !important;    
+    -webkit-flex-basis: 25% !important;
+    flex-basis: 25% !important;
+  }
+}
+
+.som-profile-section .cards-columns .column figure.profile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 260px;
+    background-position: 0 -20px;
+}
+
+.som-profile-section .cards-columns .column figure.profile img {
+    height: 260px;
+    object-fit: cover;
+    object-position: 50% 12%;
+}
+
+.som-profile-section .cards-columns .column .profile_heading {
+    position: relative;
+    text-align: center;
+    padding: 1rem 1.3rem;
+    border-bottom: 2px solid #00504d;
+    overflow: hidden;
+}
+
+.som-profile-section .cards-columns .column .profile_heading p.faculty_name {
+    margin-bottom: 0; /* 1rem; changed 7/22/20 nhellenbrand*/
+    font-size: 1rem;
+}
+
+.som-profile-section .cards-columns .column .profile_heading p.faculty_title {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.som-profile-section .cards-columns .column .profile_heading:before {
+    content: " ";
+    background-color: #00504d;
+    display: block;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    left: -3.1rem;
+    -webkit-transform: skewX(9deg);
+    transform: skewX(9deg);
+}
+
+
+.som-profile-section .cards-columns .column .profile_heading:after {
+    content: " ";
+    background-color: #00504d;
+    display: block;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    right: -3.1rem;
+    -webkit-transform: skewX(-9deg);
+    transform: skewX(-9deg);
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .som-profile-section .cards-columns .column .profile_heading:before,
+    .som-profile-section .cards-columns .column .profile_heading:after {
+        height: 14.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .som-profile-section .cards-columns .column .profile_heading:before,
+    .som-profile-section .cards-columns .column .profile_heading:after {
+        height: 12.9rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .som-profile-section .cards-columns .column .profile_heading:before,
+    .som-profile-section .cards-columns .column .profile_heading:after {
+        height: 11.9rem;
+    }
+}
+
+
+.som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+    color: #fff;
+    background-color: #00504d;
+    border-bottom-color: #fff;
+}
+
+.som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading a {
+    text-decoration: underline;
+}
+
+.som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:after, .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:before {
+    background-color: #fff;
+}
+.som-profile-section .profile_lb_content {
+    display: none;
+}
+
+.popup-clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.lightbox-open {
+    overflow: hidden;
+}
+
+.som-lightbox-container .profile-pop-up .image-column {
+    width: 25%;
+    display: inline-block;
+    float: none;
+}
+
+.som-lightbox-container .profile-pop-up .content-column {
+    width: 75%;
+    display: inline-block;
+    float: right;
+}
+
+.som-lightbox-container .profile-pop-up .content-column p {
+    padding-left: 1rem;
+}
+
+.som-lightbox-container .profile-pop-up .content-column p.fac_name {
+    font-size: 2rem;
+}
+
+.som-lightbox-container .profile-pop-up .content-column p.fac_title, .som-lightbox-container .profile-pop-up .content-column p.fac_dept {
+    font-size: 1.2rem;
+}
+
+/*
+.som-lightbox-container .profile-pop-up .content-column p a:not(.button) {
+    color: #fff;
+}
+*/
+
+@media screen and (max-width: 1024px) {
+    .icon.icon--svg.icon--svg--has-text {
+        height: 100%;
+        padding: 1rem;
+        padding-top: 0;
+        background-color: #000;
+    }
+    .som-lightbox-column {
+        padding: 0 2rem;
+    }
+    .som-profile-section .text-feature__intro-para {
+        font-size: 1.25rem;
+        margin-bottom: 0.2rem;
+    }
+}
+.som-profile-section h4 {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+.som-profile-section .text-feature__intro-para {
+    margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-pop-up .image-column {    
+    width: 30% !important;    
+    display: inline !important;    
+    float: left !important;
+    margin-right: 1rem;
+  }
+  .profile-pop-up .content-column {    
+    width: auto !important;    
+    display: inline !important;    
+    float: none !important;
+  }
+  .content-column p.fac_name {
+      font-size: 1.7rem !important;  
+  }
+}
+
+/*Site Color Updates*/
+.deep-blue-and-light-teal .som-profile-section .cards-columns .column .profile_heading:before,
+.deep-blue-and-light-teal .som-profile-section .cards-columns .column .profile_heading:after,
+.deep-blue-and-light-teal .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .som-profile-section .cards-columns .column .profile_heading {
+    border-color: #0b2751;
+}
+
+.slate-blue-and-rose .som-profile-section .cards-columns .column .profile_heading:before,
+.slate-blue-and-rose .som-profile-section .cards-columns .column .profile_heading:after,
+.slate-blue-and-rose .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .som-profile-section .cards-columns .column .profile_heading {
+	border-color: #094d63;
+}
+
+.maroon-and-tan .som-profile-section .cards-columns .column .profile_heading:before,
+.maroon-and-tan .som-profile-section .cards-columns .column .profile_heading:after,
+.maroon-and-tan .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .som-profile-section .cards-columns .column .profile_heading {
+	border-color: #61001f;
+}
+
+.deep-purple-and-orange .som-profile-section .cards-columns .column .profile_heading:before,
+.deep-purple-and-orange .som-profile-section .cards-columns .column .profile_heading:after,
+.deep-purple-and-orange .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+    background-color: #330130;
+}
+
+.maroon-and-tan .som-profile-section .cards-columns .column .profile_heading {
+	border-color: #330130;
+}
+
+.deep-blue-and-light-teal .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:after,
+.deep-blue-and-light-teal .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:before,
+.slate-blue-and-rose .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:after,
+.slate-blue-and-rose .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:before,
+.maroon-and-tan .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:after,
+.maroon-and-tan .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:before,
+.deep-purple-and-orange .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:after,
+.deep-purple-and-orange .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading:before {
+	background-color: #fff;
+}
+
+.deep-blue-and-light-teal .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading,
+.slate-blue-and-rose .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading,
+.maroon-and-tan .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading,
+.deep-purple-and-orange .som-profile-section .cards-columns .card--flat.heading-only-card:hover .profile_heading {
+	border-color: #fff;
+}
+
+.deep-blue-and-light-teal .som-profile-section a.button {
+	color: #fff;
+	background-color: #0b2751
+}
+
+.slate-blue-and-rose .som-profile-section a.button {
+	color: #fff;
+	background-color: #094d63
+}
+
+.maroon-and-tan .som-profile-section a.button {
+	color: #fff;
+	background-color: #61001f
+}
+
+.deep-purple-and-orange .som-profile-section a.button {
+	color: #fff;
+	background-color: #330130
+}
+
+.deep-blue-and-light-teal .som-profile-section a.button:hover {
+	background-color: #fff;
+	border-color: #0b2751;
+	color: #0b2751;
+}
+
+.slate-blue-and-rose .som-profile-section a.button:hover {
+	background-color: #fff;
+	border-color: #094d63;
+	color: #094d63;
+}
+
+.maroon-and-tan .som-profile-section a.button:hover {
+	background-color: #fff;
+	border-color: #61001f;
+	color: #61001f;
+}
+
+.deep-purple-and-orange .som-profile-section a.button:hover {
+	background-color: #fff;
+	border-color: #330130;
+	color: #330130;
+}
+.deep-blue-and-light-teal .profile-pop-up a.button {
+	color: #fff;
+	background-color: #0b2751
+}
+
+.slate-blue-and-rose .profile-pop-up a.button {
+	color: #fff;
+	background-color: #094d63
+}
+
+.maroon-and-tan .profile-pop-up a.button {
+	color: #fff;
+	background-color: #61001f
+}
+
+.deep-purple-and-orange .profile-pop-up a.button {
+	color: #fff;
+	background-color: #330130
+}
+
+.deep-blue-and-light-teal .profile-pop-up a.button:hover {
+	background-color: #fff;
+	border-color: #0b2751;
+	color: #0b2751;
+}
+
+.slate-blue-and-rose .profile-pop-up a.button:hover {
+	background-color: #fff;
+	border-color: #094d63;
+	color: #094d63;
+}
+
+.maroon-and-tan .profile-pop-up a.button:hover {
+	background-color: #fff;
+	border-color: #61001f;
+	color: #61001f;
+}
+
+.deep-purple-and-orange .profile-pop-up a.button:hover {
+	background-color: #fff;
+	border-color: #330130;
+	color: #330130;
+}
+
+
+.profile-pop-up a.button {
+    display: inline-block;
+    word-break: break-word;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+/*agcarroll removed .content-column a target from the rule below to address color contrast issue (gold against white background) on 6/20/2019 */
+.som-lightbox .profile-pop-up p a {
+	color: #ffba00  !important;
+    font-weight: bold;
+}
+
+.som-lightbox .profile-pop-up p a:hover {
+	color: #ffba00 !important;
+}
+
+.maroon-and-tan .som-lightbox .profile-pop-up p a:hover {
+	color: #8c6239 !important;
+}
+
+.deep-blue-and-light-teal .som-lightbox .profile-pop-up p a:hover {
+	color: #0c6e6d !important;
+}
+
+.slate-blue-and-rose .som-lightbox .profile-pop-up p a:hover {
+	color: #a90027 !important;
+}
+
+.deep-purple-and-orange .som-lightbox .profile-pop-up p a:hover {
+	color: #BA5400 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .som-skip-links {
+    top: -2rem;
+  }
+}
+
+
+/*Additional CSS post Implementation*/
+@media screen and (min-width: 1024px){
+    .main-navigation {
+       -webkit-box-shadow: 0px 2px 2px 0px rgba(239,239,239,1);
+       -moz-box-shadow: 0px 2px 2px 0px rgba(239,239,239,1);
+       box-shadow: 0px 2px 2px 0px rgba(239,239,239,1);
+     }
+}    
+
+.navbar-dropdown__feature .card--flat p,
+.card--flat p.card-content__text {
+    word-break: break-word; /* doesn't work in firefox */
+    word-wrap: break-word;
+}
+  
+.maroon-and-tan .discovery-feature .slick-dots-container, 
+.deep-blue-and-light-teal .discovery-feature .slick-dots-container, 
+.slate-blue-and-rose .discovery-feature .slick-dots-container, 
+.deep-purple-and-orange .discovery-feature .slick-dots-container, 
+.maroon-and-tan .video-gallery-feature .slick-dots-container, 
+.deep-blue-and-light-teal .video-gallery-feature .slick-dots-container, 
+.slate-blue-and-rose .video-gallery-feature .slick-dots-container, 
+.deep-purple-and-orange .video-gallery-feature .slick-dots-container {
+    display: none;
+}
+.hero-slider .hero-slider-control__dots {
+    display: none !important;    
+}
+  
+.heading-only-card .card__arrow {
+  width: 73px;
+}
+.heading-only-card .card-heading {
+  width: 205px;
+}
+
+.featured-programs-card:hover .card-heading {
+    margin-top: 0.6rem;
+}
+
+.featured-programs-card .card-heading {
+    margin-top: -11.5rem;
+}
+
+.audience-navigation a {
+    width: auto;
+}
+
+.two-cards {
+    max-width: 50% !important;
+    display: inline; /* nhellenbrand 2/18/2019 mobile cards had empty spacing */
+}
+.three-cards {
+    max-width: 33.3%;    
+    display: inline; /* nhellenbrand 2/18/2019 mobile cards had empty spacing */
+}
+.four-cards {
+    max-width: 25%;    /*nhellenbrand 9/30/2019 cards were not mobile friendly, origionaly sert to !important*/
+    display: inline; /* nhellenbrand 2/18/2019 mobile cards had empty spacing */
+}
+
+/*Accordion updates*/
+.vcusom-gold-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #ffba00;
+  	color: #323232; /* updated by mattesmj 01/24/19 for accessibility issues */
+}
+
+.vcusom-green-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #00504d;
+}
+
+.vcusom-red-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #8E0021;
+}
+
+.vcusom-deep-blue-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #082751;
+}
+
+.vcusom-teal-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #0C6E6D;
+}
+
+.vcusom-slate-blue-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #094D63;
+}
+
+.vcusom-rose-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #770031;
+}
+
+.vcusom-maroon-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #61001F;
+}
+
+.vcusom-tan-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #8C6239;
+}
+
+.vcusom-purple-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #330130;
+}
+
+.vcusom-orange-color .plugin-accordion .plugin-accordion-heading {
+    background-color: #BA5400;
+}
+
+
+
+.vcusom-gold-color.by-the-numbers-feature {
+    background-color: #ffba00;
+}
+
+.vcusom-green-color.by-the-numbers-feature {
+    background-color: #00504d;
+    color: #fff;
+}
+
+.vcusom-red-color.by-the-numbers-feature {
+    background-color: #8E0021;
+    color: #fff;
+}
+
+.vcusom-deep-blue-color.by-the-numbers-feature {
+    background-color: #082751;
+    color: #fff;
+}
+
+.vcusom-teal-color.by-the-numbers-feature {
+    background-color: #0C6E6D;
+    color: #fff;
+}
+
+.vcusom-slate-blue-color.by-the-numbers-feature {
+    background-color: #094D63;
+    color: #fff;
+}
+
+.vcusom-rose-color.by-the-numbers-feature {
+    background-color: #770031;
+    color: #fff;
+}
+
+.vcusom-maroon-color.by-the-numbers-feature {
+    background-color: #61001F;
+    color: #fff;
+}
+
+.vcusom-tan-color.by-the-numbers-feature {
+    background-color: #8C6239;
+    color: #fff;
+}
+
+.vcusom-purple-color.by-the-numbers-feature {
+    background-color: #330130;
+    color: #fff;
+}
+
+.vcusom-orange-color.by-the-numbers-feature {
+    background-color: #BA5400;
+    color: #fff;
+}
+
+.grad-overlay-card .image.is-3by2 img {
+	height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ 
+/*Site color updates - 2 Feature Cards*/
+.deep-blue-and-light-teal .featured-programs-alt {
+    color: #0b2751;
+    background-color: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt .program-card__ctas a {
+    color: #0b2751;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt .program-card__ctas a .icon {
+    fill: #0b2751;
+    stroke: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #0b2751;
+    color: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-blue-and-light-teal .site-gateway__card:hover, .deep-blue-and-light-teal .site-gateway__card:active, .deep-blue-and-light-teal .site-gateway__card:focus, .deep-blue-and-light-teal .site-gateway__card--left:hover, .deep-blue-and-light-teal .site-gateway__card--left:active, .deep-blue-and-light-teal .site-gateway__card--left:focus {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt {
+    color: #0b2751;
+    background-color: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt .program-card__ctas a {
+    color: #0b2751;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt .program-card__ctas a .icon {
+    fill: #0b2751;
+    stroke: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #0b2751;
+    color: #fff;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-blue-and-light-teal .site-gateway__card:hover, .deep-blue-and-light-teal .site-gateway__card:active, .deep-blue-and-light-teal .site-gateway__card:focus, .deep-blue-and-light-teal .site-gateway__card--left:hover, .deep-blue-and-light-teal .site-gateway__card--left:active, .deep-blue-and-light-teal .site-gateway__card--left:focus {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .card--flat.has-border-primary, .deep-blue-and-light-teal .featured-programs-card-alt {
+    border-bottom-color: #0b2751;
+}
+
+.slate-blue-and-rose .featured-programs-alt {
+    color: #094d63;
+    background-color: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-alt .program-card__ctas a {
+    color: #094d63;
+}
+
+.slate-blue-and-rose .featured-programs-alt .program-card__ctas a .icon {
+    fill: #094d63;
+    stroke: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #094d63;
+    color: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0c6e6d;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.slate-blue-and-rose .site-gateway__card:hover, .slate-blue-and-rose .site-gateway__card:active, .slate-blue-and-rose .site-gateway__card:focus, .slate-blue-and-rose .site-gateway__card--left:hover, .slate-blue-and-rose .site-gateway__card--left:active, .slate-blue-and-rose .site-gateway__card--left:focus {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .featured-programs-alt {
+    color: #094d63;
+    background-color: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-alt .program-card__ctas a {
+    color: #094d63;
+}
+
+.slate-blue-and-rose .featured-programs-alt .program-card__ctas a .icon {
+    fill: #094d63;
+    stroke: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #094d63;
+    color: #fff;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #770031;
+}
+
+.slate-blue-and-rose .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.slate-blue-and-rose .site-gateway__card:hover, .slate-blue-and-rose .site-gateway__card:active, .slate-blue-and-rose .site-gateway__card:focus, .slate-blue-and-rose .site-gateway__card--left:hover, .slate-blue-and-rose .site-gateway__card--left:active, .slate-blue-and-rose .site-gateway__card--left:focus {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .card--flat.has-border-primary, .slate-blue-and-rose .featured-programs-card-alt {
+    border-bottom-color: #094d63;
+}
+
+.maroon-and-tan .featured-programs-alt {
+    color: #61001f;
+    background-color: #fff;
+}
+
+.maroon-and-tan .featured-programs-alt .program-card__ctas a {
+    color: #61001f;
+}
+
+.maroon-and-tan .featured-programs-alt .program-card__ctas a .icon {
+    fill: #61001f;
+    stroke: #fff;
+}
+
+.maroon-and-tan .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #8c6239;
+    color: #fff;
+}
+
+.maroon-and-tan .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0c6e6d;
+}
+
+.maroon-and-tan .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.maroon-and-tan .site-gateway__card:hover, .maroon-and-tan .site-gateway__card:active, .maroon-and-tan .site-gateway__card:focus, .maroon-and-tan .site-gateway__card--left:hover, .maroon-and-tan .site-gateway__card--left:active, .maroon-and-tan .site-gateway__card--left:focus {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .featured-programs-alt {
+    color: #61001f;
+    background-color: #fff;
+}
+
+.maroon-and-tan .featured-programs-alt .program-card__ctas a {
+    color: #61001f;
+}
+
+.maroon-and-tan .featured-programs-alt .program-card__ctas a .icon {
+    fill: #61001f;
+    stroke: #fff;
+}
+
+.maroon-and-tan .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #61001f;
+    color: #fff;
+}
+
+.maroon-and-tan .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #8c6239;
+}
+
+.maroon-and-tan .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.maroon-and-tan .site-gateway__card:hover, .maroon-and-tan .site-gateway__card:active, .maroon-and-tan .site-gateway__card:focus, .maroon-and-tan .site-gateway__card--left:hover, .maroon-and-tan .site-gateway__card--left:active, .maroon-and-tan .site-gateway__card--left:focus {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .card--flat.has-border-primary, .maroon-and-tan .featured-programs-card-alt {
+    border-bottom-color: #61001f;
+}
+
+.deep-purple-and-orange .featured-programs-alt {
+    color: #330130;
+    background-color: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-alt .program-card__ctas a {
+    color: #330130;
+}
+
+.deep-purple-and-orange .featured-programs-alt .program-card__ctas a .icon {
+    fill: #330130;
+    stroke: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #8c6239;
+    color: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0c6e6d;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-purple-and-orange .site-gateway__card:hover, .deep-purple-and-orange .site-gateway__card:active, .deep-purple-and-orange .site-gateway__card:focus, .deep-purple-and-orange .site-gateway__card--left:hover, .deep-purple-and-orange .site-gateway__card--left:active, .deep-purple-and-orange .site-gateway__card--left:focus {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .featured-programs-alt {
+    color: #330130;
+    background-color: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-alt .program-card__ctas a {
+    color: #330130;
+}
+
+.deep-purple-and-orange .featured-programs-alt .program-card__ctas a .icon {
+    fill: #330130;
+    stroke: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #330130;
+    color: #fff;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #BA5400;
+}
+
+.deep-purple-and-orange .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-purple-and-orange .site-gateway__card:hover, .deep-purple-and-orange .site-gateway__card:active, .deep-purple-and-orange .site-gateway__card:focus, .deep-purple-and-orange .site-gateway__card--left:hover, .deep-purple-and-orange .site-gateway__card--left:active, .deep-purple-and-orange .site-gateway__card--left:focus {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .card--flat.has-border-primary, .deep-purple-and-orange .featured-programs-card-alt {
+    border-bottom-color: #330130;
+}
+
+/*Site color updates - Gallery*/
+.deep-blue-and-light-teal .video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #092043;
+}
+
+.slate-blue-and-rose .video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #09485d;
+}
+
+.maroon-and-tan .video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #4d0018;
+}
+
+.deep-purple-and-orange .video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #330120;
+}
+
+/*Site COlor - Dean's Message*/
+.deep-blue-and-light-teal .deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(11, 39, 81, 0.82);
+}
+.slate-blue-and-rose .deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(9, 77, 99, 0.82);
+}
+.maroon-and-tan .deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(97, 0, 31, 0.82);
+}
+.deep-purple-and-orange .deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(51, 1, 48, 0.82);
+}
+.deep-blue-and-light-teal .deans-message-feature a:hover, .deep-blue-and-light-teal .deans-message-feature a:active, .deep-blue-and-light-teal .deans-message-feature a:focus {
+    color: #0b2751;
+}
+
+.slate-blue-and-rose .deans-message-feature a:hover, .slate-blue-and-rose .deans-message-feature a:active, .slate-blue-and-rose .deans-message-feature a:focus {
+    color: #094d63;
+}
+
+.maroon-and-tan .deans-message-feature a:hover, .maroon-and-tan .deans-message-feature a:active, .maroon-and-tan .deans-message-feature a:focus {
+    color: #8c6239;
+}
+
+.deep-purple-and-orange .deans-message-feature a:hover, .deep-purple-and-orange .deans-message-feature a:active, .deep-purple-and-orange .deans-message-feature a:focus {
+    color: #BA5400;
+}
+/*Site COlor - 3 Action Boxes*/
+
+.deep-blue-and-light-teal .plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #0c6e6d;
+}
+
+.slate-blue-and-rose .plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #770031;
+}
+
+.maroon-and-tan .plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #8c6239;
+}
+
+.deep-purple-and-orange .plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #BA5400;
+}
+  
+  
+.deep-blue-and-light-teal .plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #0c6e6d;
+}
+.deep-blue-and-light-teal .plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #0b2751;
+}
+
+.slate-blue-and-rose .plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #770031;
+}
+.slate-blue-and-rose .plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #094d63;
+}
+
+.maroon-and-tan .plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #8c6239;
+}
+.maroon-and-tan .plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #61001f;
+}
+
+.deep-purple-and-orange .plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: black;
+}
+.deep-purple-and-orange .plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: black;
+}  
+
+/*Site Color - Featured Programs*/
+.deep-blue-and-light-teal .featured-programs-card:hover .card-content, .deep-blue-and-light-teal .featured-programs-card:active .card-content, .deep-blue-and-light-teal .featured-programs-card:focus .card-content {
+    background-color: rgba(11, 39, 81, 0.82);
+}
+
+.slate-blue-and-rose .featured-programs-card:hover .card-content, .slate-blue-and-rose .featured-programs-card:active .card-content, .slate-blue-and-rose .featured-programs-card:focus .card-content {
+    background-color: rgba(9, 77, 99, 0.82);
+}
+
+.maroon-and-tan .featured-programs-card:hover .card-content, .maroon-and-tan .featured-programs-card:active .card-content, .maroon-and-tan .featured-programs-card:focus .card-content {
+    background-color: rgba(97, 0, 31, 0.82);
+}
+
+.deep-purple-and-orange .featured-programs-card:hover .card-content, .deep-purple-and-orange .featured-programs-card:active .card-content, .deep-purple-and-orange .featured-programs-card:focus .card-content {
+    background-color: rgba(51, 1, 48, 0.82);
+}
+
+/*Site Color - MegaMenu*/  
+.deep-blue-and-light-teal .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active  {
+    background-color: #0b2751;
+}
+.slate-blue-and-rose .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active {
+    background-color: #094d63;
+}
+.maroon-and-tan .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active {
+    background-color: #61001f;
+}
+.deep-purple-and-orange .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active {
+    background-color: #330130;
+}
+.deep-blue-and-light-teal .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active::before  {
+    border-top-color: #0b2751;
+}
+.slate-blue-and-rose .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active::before {
+    border-top-color: #094d63;
+}
+.maroon-and-tan .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active::before {
+    border-top-color: #61001f;
+}
+.deep-purple-and-orange .main-navigation__menu .main-navigation__item > a.navbar-link--main.is-active::before {
+    border-top-color: #330130;
+}
+
+  
+  /*Featured Programs - 2Col*/
+.featured-programs .column.two-cols, .featured-programs .column.two-cols .featured-programs-card, .column.two-cols .card-image, .column.two-cols .card__anchor,
+.column.two-cols figure.image img {
+    max-height: 30rem !important;
+}
+
+.column.two-cols figure.image img {
+    object-fit: cover;
+}
+
+.column.two-cols .card--flat.featured-programs-card:hover figure.image img {
+   padding-bottom: 0.8rem;
+}
+
+  /*3 split cotnent - Gold*/
+.feature-section--section-intro.has-som-gold-background .section-intro__body:before {
+   
+    background-color: rgba(255, 186, 0, 0.8) !important;
+}
+
+.feature-section--section-intro.has-som-gold-background .section-intro__body {
+     color: #202020;
+}
+
+.feature-section--section-intro.has-som-gold-background .section-intro__body:before {
+   
+    background-color: rgba(255, 186, 0, 0.8);
+}
+
+.feature-section--section-intro.has-som-gold-background .section-intro__body {
+     color: #202020;
+}
+
+/*Visual Graphic Gold*/
+.feature-section--vision-graphic .has-som-gold-background:before {
+    background-color: rgba(255, 186, 0, 0.8) !important;    
+}
+
+/*Hero Image Overlay*/
+.hero.is-fullheight.hero-image {
+    background-color: rgba(0, 80, 77, 0.82);
+}
+.deep-blue-and-light-teal .hero.is-fullheight.hero-image {
+    background-color: rgba(11, 39, 81, 0.82);
+}
+.slate-blue-and-rose .hero.is-fullheight.hero-image {
+    background-color: rgba(9, 77, 99, 0.82);
+}
+.maroon-and-tan .hero.is-fullheight.hero-image {
+    background-color: rgba(97, 0, 31, 0.82);
+}
+.deep-purple-and-orange .hero.is-fullheight.hero-image {
+    background-color: rgba(51, 1, 48, 0.82);
+}
+
+.hero:not([class*='-background']) {
+    background-image: linear-gradient(19.5deg, #00504d, #525252);
+}
+
+.deep-blue-and-light-teal .hero:not([class*='-background']) {
+    background-image: linear-gradient(19.5deg, #0b2751, #525252);
+}
+
+.slate-blue-and-rose .hero:not([class*='-background']) {
+    background-image: linear-gradient(19.5deg, #094d63, #525252);
+}
+
+.maroon-and-tan .hero:not([class*='-background']) {
+    background-image: linear-gradient(19.5deg, #61001f, #525252);
+}
+
+.deep-purple-and-orange .hero:not([class*='-background']) {
+    background-image: linear-gradient(19.5deg, #330130, #525252);
+}
+
+/*Visual Graphic Updates*/
+.feature-section--vision-graphic .columns .has-vision-graphic:before {
+    left: -300%;
+    width: 400%;
+    right: auto;
+}
+
+.feature-section--vision-graphic .columns.pull-right .has-vision-graphic:before {
+    right: -300%;
+    width: 420%;
+    left: auto;
+}
+
+
+  /*Site Color - Seconday/Gold Color Updates*/
+.deep-blue-and-light-teal .featured-programs-alt.color-has-secondary-background .program-card__ctas a {
+    color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt.color-has-secondary-background .program-card__ctas a .icon {
+    fill: #0c6e6d;
+    stroke: #fff;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #0c6e6d;
+    color: #fff;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #0b2751;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card:hover, .deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card:active, .deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card:focus, .deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card--left:hover, .deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card--left:active, .deep-blue-and-light-teal .color-has-secondary-background .site-gateway__card--left:focus {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background .card--flat.has-border-primary, .deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card-alt {
+    border-bottom-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt.color-has-som-gold-background .program-card__ctas a {
+    color: #ffba00;
+}
+
+.deep-blue-and-light-teal .featured-programs-alt.color-has-som-gold-background .program-card__ctas a .icon {
+    fill: #ffba00;
+    stroke: #fff;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .card--flat:hover .card__arrow .icon svg, .card--flat:focus .card__arrow .icon svg, .card--flat:active .card__arrow .icon svg {
+    fill: #fff;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #ffba00;
+    color: #202020;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #202020;
+    color: #ffba00;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #ffba00;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #ffba00;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #202020;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card:hover, .deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card:active, .deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card:focus, .deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card--left:hover, .deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card--left:active, .deep-blue-and-light-teal .color-has-som-gold-background .site-gateway__card--left:focus {
+    background-color: #ffba00;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background .card--flat.has-border-primary, .deep-blue-and-light-teal .color-has-som-gold-background .featured-programs-card-alt {
+    border-bottom-color: #ffba00;
+}
+
+.slate-blue-and-rose .featured-programs-alt.color-has-secondary-background .program-card__ctas a {
+    color: #770031;
+}
+
+.slate-blue-and-rose .featured-programs-alt.color-has-secondary-background .program-card__ctas a .icon {
+    fill: #770031;
+    stroke: #fff;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #770031;
+    color: #fff;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #094d63;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #770031;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #770031;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .site-gateway__card:hover, .slate-blue-and-rose .color-has-secondary-background .site-gateway__card:active, .slate-blue-and-rose .color-has-secondary-background .site-gateway__card:focus, .slate-blue-and-rose .color-has-secondary-background .site-gateway__card--left:hover, .slate-blue-and-rose .color-has-secondary-background .site-gateway__card--left:active, .slate-blue-and-rose .color-has-secondary-background .site-gateway__card--left:focus {
+    background-color: #770031;
+}
+
+.slate-blue-and-rose .color-has-secondary-background .card--flat.has-border-primary, .slate-blue-and-rose .color-has-secondary-background .featured-programs-card-alt {
+    border-bottom-color: #770031;
+}
+
+.slate-blue-and-rose .featured-programs-alt.color-has-som-gold-background .program-card__ctas a {
+    color: #ffba00;
+}
+
+.slate-blue-and-rose .featured-programs-alt.color-has-som-gold-background .program-card__ctas a .icon {
+    fill: #ffba00;
+    stroke: #fff;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .card--flat:hover .card__arrow .icon svg, .card--flat:focus .card__arrow .icon svg, .card--flat:active .card__arrow .icon svg {
+    fill: #fff;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #ffba00;
+    color: #202020;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #202020;
+    color: #ffba00;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #ffba00;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #ffba00;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #202020;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .site-gateway__card:hover, .slate-blue-and-rose .color-has-som-gold-background .site-gateway__card:active, .slate-blue-and-rose .color-has-som-gold-background .site-gateway__card:focus, .slate-blue-and-rose .color-has-som-gold-background .site-gateway__card--left:hover, .slate-blue-and-rose .color-has-som-gold-background .site-gateway__card--left:active, .slate-blue-and-rose .color-has-som-gold-background .site-gateway__card--left:focus {
+    background-color: #ffba00;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background .card--flat.has-border-primary, .slate-blue-and-rose .color-has-som-gold-background .featured-programs-card-alt {
+    border-bottom-color: #ffba00;
+}
+
+.maroon-and-tan .featured-programs-alt.color-has-secondary-background .program-card__ctas a {
+    color: #8c6239;
+}
+
+.maroon-and-tan .featured-programs-alt.color-has-secondary-background .program-card__ctas a .icon {
+    fill: #8c6239;
+    stroke: #fff;
+}
+
+.maroon-and-tan .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #8c6239;
+    color: #fff;
+}
+
+.maroon-and-tan .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #61001f;
+}
+
+.maroon-and-tan .color-has-secondary-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #8c6239;
+}
+
+.maroon-and-tan .color-has-secondary-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #8c6239;
+}
+
+.maroon-and-tan .color-has-secondary-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.maroon-and-tan .color-has-secondary-background .site-gateway__card:hover, .maroon-and-tan .color-has-secondary-background .site-gateway__card:active, .maroon-and-tan .color-has-secondary-background .site-gateway__card:focus, .maroon-and-tan .color-has-secondary-background .site-gateway__card--left:hover, .maroon-and-tan .color-has-secondary-background .site-gateway__card--left:active, .maroon-and-tan .color-has-secondary-background .site-gateway__card--left:focus {
+    background-color: #8c6239;
+}
+
+.maroon-and-tan .color-has-secondary-background .card--flat.has-border-primary, .maroon-and-tan .color-has-secondary-background .featured-programs-card-alt {
+    border-bottom-color: #8c6239;
+}
+
+.maroon-and-tan .featured-programs-alt.color-has-som-gold-background .program-card__ctas a {
+    color: #ffba00;
+}
+
+.maroon-and-tan .featured-programs-alt.color-has-som-gold-background .program-card__ctas a .icon {
+    fill: #ffba00;
+    stroke: #fff;
+}
+
+.maroon-and-tan .color-has-som-gold-background .card--flat:hover .card__arrow .icon svg, .card--flat:focus .card__arrow .icon svg, .card--flat:active .card__arrow .icon svg {
+    fill: #fff;
+}
+
+.maroon-and-tan .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #ffba00;
+    color: #202020;
+}
+
+.maroon-and-tan .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #202020;
+    color: #ffba00;
+}
+
+.maroon-and-tan .color-has-som-gold-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #ffba00;
+}
+
+.maroon-and-tan .color-has-som-gold-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #ffba00;
+}
+
+.maroon-and-tan .color-has-som-gold-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #202020;
+}
+
+.maroon-and-tan .color-has-som-gold-background .site-gateway__card:hover, .maroon-and-tan .color-has-som-gold-background .site-gateway__card:active, .maroon-and-tan .color-has-som-gold-background .site-gateway__card:focus, .maroon-and-tan .color-has-som-gold-background .site-gateway__card--left:hover, .maroon-and-tan .color-has-som-gold-background .site-gateway__card--left:active, .maroon-and-tan .color-has-som-gold-background .site-gateway__card--left:focus {
+    background-color: #ffba00;
+}
+
+.maroon-and-tan .color-has-som-gold-background .card--flat.has-border-primary, .maroon-and-tan .color-has-som-gold-background .featured-programs-card-alt {
+    border-bottom-color: #ffba00;
+}
+
+.deep-purple-and-orange .featured-programs-alt.color-has-secondary-background .program-card__ctas a {
+    color: #BA5400;
+}
+
+.deep-purple-and-orange .featured-programs-alt.color-has-secondary-background .program-card__ctas a .icon {
+    fill: #BA5400;
+    stroke: #fff;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #BA5400;
+    color: #fff;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #330130;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #BA5400;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #BA5400;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #fff;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .site-gateway__card:hover, .deep-purple-and-orange .color-has-secondary-background .site-gateway__card:active, .deep-purple-and-orange .color-has-secondary-background .site-gateway__card:focus, .deep-purple-and-orange .color-has-secondary-background .site-gateway__card--left:hover, .deep-purple-and-orange .color-has-secondary-background .site-gateway__card--left:active, .deep-purple-and-orange .color-has-secondary-background .site-gateway__card--left:focus {
+    background-color: #BA5400;
+}
+
+.deep-purple-and-orange .color-has-secondary-background .card--flat.has-border-primary, .deep-purple-and-orange .color-has-secondary-background .featured-programs-card-alt {
+    border-bottom-color: #BA5400;
+}
+
+.deep-purple-and-orange .featured-programs-alt.color-has-som-gold-background .program-card__ctas a {
+    color: #ffba00;
+}
+
+.deep-purple-and-orange .featured-programs-alt.color-has-som-gold-background .program-card__ctas a .icon {
+    fill: #ffba00;
+    stroke: #fff;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .card--flat:hover .card__arrow .icon svg, .card--flat:focus .card__arrow .icon svg, .card--flat:active .card__arrow .icon svg {
+    fill: #fff;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button {
+    background-color: #ffba00;
+    color: #202020;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .featured-programs-card-alt .program-card__ctas a.button:hover {
+    background-color: #202020;
+    color: #ffba00;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .featured-programs-card-alt .card__arrow .icon:before {
+    background-color: #ffba00;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .card--flat.has-border-primary .card__arrow span::before {
+    background-color: #ffba00;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .site-gateway__card--left.card--flat.has-border-primary:hover .card__arrow span::before {
+    background-color: #202020;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .site-gateway__card:hover, .deep-purple-and-orange .color-has-som-gold-background .site-gateway__card:active, .deep-purple-and-orange .color-has-som-gold-background .site-gateway__card:focus, .deep-purple-and-orange .color-has-som-gold-background .site-gateway__card--left:hover, .deep-purple-and-orange .color-has-som-gold-background .site-gateway__card--left:active, .deep-purple-and-orange .color-has-som-gold-background .site-gateway__card--left:focus {
+    background-color: #ffba00;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background .card--flat.has-border-primary, .deep-purple-and-orange .color-has-som-gold-background .featured-programs-card-alt {
+    border-bottom-color: #ffba00;
+}
+
+/*Seconday/Gold Color Updates - Gallery*/
+.deep-blue-and-light-teal .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #0c6e6d;
+}
+.deep-blue-and-light-teal .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #0a5c5a;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #ffba00;
+    color: #202020;
+}
+.deep-blue-and-light-teal .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #e6a800;
+}
+
+.slate-blue-and-rose .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #770031;
+}
+.slate-blue-and-rose .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #66002b;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #ffba00;
+    color: #202020;
+}
+.slate-blue-and-rose .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #e6a800;
+}
+.maroon-and-tan .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #8c6239;
+}
+.maroon-and-tan .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #7f5934;
+}
+
+.maroon-and-tan .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #ffba00;
+    color: #202020;
+}
+.maroon-and-tan .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #e6a800;
+}
+.deep-purple-and-orange .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #BA5400;
+}
+.deep-purple-and-orange .color-has-secondary-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #994500;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls {
+    background-color: #ffba00;
+    color: #202020;
+}
+.deep-purple-and-orange .color-has-som-gold-background.video-gallery-feature .video-slider-card .card-content__controls:hover {
+    background-color: #e6a800;
+}
+
+/*Message to the dean - Seconday/Gold*/
+.deep-blue-and-light-teal .color-has-secondary-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(12, 110, 109, 0.82);
+}
+.deep-blue-and-light-teal .color-has-secondary-background.deans-message-feature a:hover, .deep-blue-and-light-teal .color-has-secondary-background.deans-message-feature a:active, .deep-blue-and-light-teal .color-has-secondary-background.deans-message-feature a:focus {
+    color: #0b2751;
+}
+
+.deep-blue-and-light-teal .color-has-som-gold-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(255, 186, 0, 0.82);
+    color: #202020;
+}
+.deep-blue-and-light-teal .color-has-som-gold-background.deans-message-feature a, .deep-blue-and-light-teal .color-has-som-gold-background.deans-message-feature a:hover, .deep-blue-and-light-teal .color-has-som-gold-background.deans-message-feature a:active, .deep-blue-and-light-teal .color-has-som-gold-background.deans-message-feature a:focus {
+    color: #202020;
+}
+
+.deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message {
+    color: #202020;
+}
+
+.deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message .icon.icon--svg.has-icon-white {
+    fill: #202020;
+    stroke: #202020;
+}
+
+.deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h2 > span, .deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h3 > span, .deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h4 > span, .deep-blue-and-light-teal .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h5 > span {
+    border-bottom: 2px solid #202020;
+}
+
+.slate-blue-and-rose .color-has-secondary-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(119, 0, 49, 0.82);
+}
+.slate-blue-and-rose .color-has-secondary-background.deans-message-feature a:hover, .slate-blue-and-rose .color-has-secondary-background.deans-message-feature a:active, .slate-blue-and-rose .color-has-secondary-background.deans-message-feature a:focus {
+    color: #094d63;
+}
+
+.slate-blue-and-rose .color-has-som-gold-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(255, 186, 0, 0.82);
+    color: #202020;
+}
+.slate-blue-and-rose .color-has-som-gold-background.deans-message-feature a, .slate-blue-and-rose .color-has-som-gold-background.deans-message-feature a:hover, .slate-blue-and-rose .color-has-som-gold-background.deans-message-feature a:active, .slate-blue-and-rose .color-has-som-gold-background.deans-message-feature a:focus {
+    color: #202020;
+}
+
+.slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message {
+    color: #202020;
+}
+
+.slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message .icon.icon--svg.has-icon-white {
+    fill: #202020;
+    stroke: #202020;
+}
+
+.slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h2 > span, .slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h3 > span, .slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h4 > span, .slate-blue-and-rose .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h5 > span {
+    border-bottom: 2px solid #202020;
+}
+
+.maroon-and-tan .color-has-secondary-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(140, 98, 57, 0.82);
+}
+.maroon-and-tan .color-has-secondary-background.deans-message-feature a:hover, .maroon-and-tan .color-has-secondary-background.deans-message-feature a:active, .maroon-and-tan .color-has-secondary-background.deans-message-feature a:focus {
+    color: #61001f;
+}
+
+.maroon-and-tan .color-has-som-gold-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(255, 186, 0, 0.82);
+    color: #202020;
+}
+.maroon-and-tan .color-has-som-gold-background.deans-message-feature a, .maroon-and-tan .color-has-som-gold-background.deans-message-feature a:hover, .maroon-and-tan .color-has-som-gold-background.deans-message-feature a:active, .maroon-and-tan .color-has-som-gold-background.deans-message-feature a:focus {
+    color: #202020;
+}
+
+.maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message {
+    color: #202020;
+}
+
+.maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message .icon.icon--svg.has-icon-white {
+    fill: #202020;
+    stroke: #202020;
+}
+
+.maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h2 > span, .maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h3 > span, .maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h4 > span, .maroon-and-tan .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h5 > span {
+    border-bottom: 2px solid #202020;
+}
+
+.deep-purple-and-orange .color-has-secondary-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(186, 84, 0, 0.82);
+}
+.deep-purple-and-orange .color-has-secondary-background.deans-message-feature a:hover, .deep-purple-and-orange .color-has-secondary-background.deans-message-feature a:active, .deep-purple-and-orange .color-has-secondary-background.deans-message-feature a:focus {
+    color: #330130;
+}
+
+.deep-purple-and-orange .color-has-som-gold-background.deans-message-feature .deans-message > .image-overlay {
+    background-color: rgba(255, 186, 0, 0.82);
+    color: #202020;
+}
+.deep-purple-and-orange .color-has-som-gold-background.deans-message-feature a, .deep-purple-and-orange .color-has-som-gold-background.deans-message-feature a:hover, .deep-purple-and-orange .color-has-som-gold-background.deans-message-feature a:active, .deep-purple-and-orange .color-has-som-gold-background.deans-message-feature a:focus {
+    color: #202020;
+}
+
+.deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message {
+    color: #202020;
+}
+
+.deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message .icon.icon--svg.has-icon-white {
+    fill: #202020;
+    stroke: #202020;
+}
+
+.deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h2 > span, .deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h3 > span, .deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h4 > span, .deep-purple-and-orange .deans-message-feature.color-has-som-gold-background .deans-message__content .deans-message h5 > span {
+    border-bottom: 2px solid #202020;
+}
+
+  
+/*3 Action Boxes - Secondary/Gold*/
+.deep-blue-and-light-teal .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #0c6e6d;
+}
+
+.deep-blue-and-light-teal .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #0b2751;
+}
+
+.slate-blue-and-rose .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #770031;
+}
+
+.slate-blue-and-rose .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #094d63;
+}
+
+.maroon-and-tan .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #8c6239;
+}
+
+.maroon-and-tan .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #61001f;
+}
+
+.deep-purple-and-orange .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #BA5400;
+}
+
+.deep-purple-and-orange .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #330130;
+}
+
+  
+.deep-blue-and-light-teal .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #0b2751;
+}
+.deep-blue-and-light-teal .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #00504d;
+}
+
+.slate-blue-and-rose .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #094d63;
+}
+.slate-blue-and-rose .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #770031;
+}
+
+.maroon-and-tan .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #61001f;
+}
+.maroon-and-tan .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #8c6239;
+}
+
+.deep-purple-and-orange .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #BA5400;
+}
+.deep-purple-and-orange .color-has-secondary-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #330130;
+} 
+
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(even) .button {
+    color: #ffba00 !important;
+}
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(even) .button:hover {
+    background-color: #ffba00 !important;
+    color: #202020 !important;
+}
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button {
+    color: #202020 !important;
+}
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(odd) .button:hover {
+    background-color: #202020 !important;
+    color: #ffba00 !important;
+}
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(even) .card-content {
+    background-color: #202020 !important;
+}
+
+.color-has-som-gold-background.plain-cards-feature .cards-columns .column:nth-child(odd) .card-content {
+    background-color: #ffba00 !important;
+}
+
+/*Featur Programs - Gold Secondary*/
+.deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card:hover .card-content, .deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card:active .card-content, .deep-blue-and-light-teal .color-has-secondary-background .featured-programs-card:focus .card-content {
+    background-color: rgba(12, 110, 109, 0.82);
+}
+
+.slate-blue-and-rose .color-has-secondary-background .featured-programs-card:hover .card-content, .slate-blue-and-rose .color-has-secondary-background .featured-programs-card:active .card-content, .slate-blue-and-rose .color-has-secondary-background .featured-programs-card:focus .card-content {
+    background-color: rgba(119, 0, 49, 0.82);
+}
+
+.maroon-and-tan .color-has-secondary-background .featured-programs-card:hover .card-content, .maroon-and-tan .color-has-secondary-background .featured-programs-card:active .card-content, .maroon-and-tan .color-has-secondary-background .featured-programs-card:focus .card-content {
+    background-color: rgba(140, 98, 57, 0.82);
+}
+
+.deep-purple-and-orange .color-has-secondary-background .featured-programs-card:hover .card-content, .deep-purple-and-orange .color-has-secondary-background .featured-programs-card:active .card-content, .deep-purple-and-orange .color-has-secondary-background .featured-programs-card:focus .card-content {
+    background-color: rgba(186, 84, 0, 0.82);
+}
+
+.color-has-som-gold-background .featured-programs-card:hover .card-content, .deep-purple-and-orange .color-has-som-gold-background .featured-programs-card:active .card-content, .deep-purple-and-orange .color-has-som-gold-background .featured-programs-card:focus .card-content {
+    background-color: rgba(255, 186, 0, 0.82) !important;
+}
+  
+.navbar-item.som-logo {
+    max-width: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-item.som-logo {    
+    max-width: 265px !important;
+  }
+}
+
+.emptyp {
+    background-color: red;    
+}
+
+
+.navbar-dropdown.has-feature .card-content {
+	height: 100%;
+}
+  
+.secondary-navigation .navbar-item {
+  text-decoration: none;
+}
+
+.slick-dots-container {
+  display: none;
+}
+
+/*Mega Menu Borders - Site Colors*/
+.main-navigation__menu .navbar-dropdown,
+.main-navigation__menu {
+	border-color: #00504d;
+}
+
+.deep-blue-and-light-teal .main-navigation__menu .navbar-dropdown,
+.deep-blue-and-light-teal .main-navigation__menu {
+	border-color: #0b2751;
+}
+
+.slate-blue-and-rose .main-navigation__menu .navbar-dropdown,
+.slate-blue-and-rose .main-navigation__menu {
+	border-color: #094d63;
+}
+
+.maroon-and-tan .main-navigation__menu .navbar-dropdown,
+.maroon-and-tan .main-navigation__menu {
+	border-color: #61001f;
+}
+
+.deep-purple-and-orange .main-navigation__menu .navbar-dropdown,
+.deep-purple-and-orange .main-navigation__menu {
+	border-color: #330130;
+}
+
+@media screen and (max-width: 1023px) {
+	.main-navigation__menu .navbar-link--main {
+	    border-color: #00504d;
+	}
+	.deep-blue-and-light-teal .main-navigation__menu .navbar-link--main {
+		border-color: #0b2751;
+	}
+
+	.slate-blue-and-rose .main-navigation__menu .navbar-link--main {
+		border-color: #094d63;
+	}
+
+	.maroon-and-tan .main-navigation__menu .navbar-link--main {
+		border-color: #61001f;
+	}
+
+	.deep-purple-and-orange .main-navigation__menu .navbar-link--main {
+		border-color: #330130;
+	}
+}
+
+  
+/*Dean's Message mobile overlay*/
+
+@media screen and (min-width: 0px) {
+    .inner-page-nav ul > li > a:focus,
+	.inner-page-nav ul > li:focus-within,
+	.inner-page-nav ul > li > a:hover,
+	.inner-page-nav ul > li:hover  {
+	    background-color: #00504d;
+	    color: #fff;
+	}
+
+
+	.deep-blue-and-light-teal .inner-page-nav ul > li > a:focus,
+	.deep-blue-and-light-teal .inner-page-nav ul > li:focus-within,
+	.deep-blue-and-light-teal .inner-page-nav ul > li > a:hover,
+	.deep-blue-and-light-teal .inner-page-nav ul > li:hover  {
+	    background-color: #0b2751;
+	    color: #fff;
+	}
+
+	.slate-blue-and-rose .inner-page-nav ul > li > a:focus,
+	.slate-blue-and-rose .inner-page-nav ul > li:focus-within,
+	.slate-blue-and-rose .inner-page-nav ul > li > a:hover,
+	.slate-blue-and-rose .inner-page-nav ul > li:hover  {
+	    background-color: #094d63;
+	    color: #fff;
+	}
+
+	.maroon-and-tan .inner-page-nav ul > li > a:focus,
+	.maroon-and-tan .inner-page-nav ul > li:focus-within,
+	.maroon-and-tan .inner-page-nav ul > li > a:hover,
+	.maroon-and-tan .inner-page-nav ul > li:hover  {
+	    background-color: #61001f;
+	    color: #fff;
+	}
+
+	.deep-purple-and-orange .inner-page-nav ul > li > a:focus,
+	.deep-purple-and-orange .inner-page-nav ul > li:focus-within,
+	.deep-purple-and-orange .inner-page-nav ul > li > a:hover,
+	.deep-purple-and-orange .inner-page-nav ul > li:hover  {
+	    background-color: #330130;
+	    color: #fff;
+	}
+}
+
+.navbar-dropdown a {
+    text-decoration: none !important;    
+}
+
+.navbar-dropdown a:hover {
+    text-decoration: underline !important;    
+}
+
+  section.deans-message-feature {
+      padding-top: 2.5rem; 
+  }
+
+.news-and-events-feature .plugin-vcu-news-items {
+    display: block;
+}
+
+.news-and-events-feature .plugin-vcu-news-item {
+    display: inline-block;
+}
+
+.navbar-link.navbar-link--main span.icon {
+    position: relative;
+    z-index: 100; /*changed from 1000 to 100 on 2/11/2019 by agcarroll*/
+}
+
+.main-navigation .navbar-brand .som-logo,
+.main-navigation .navbar-brand .som-logo a {
+	position: relative !important;
+    z-index: 500001 !important;
+}
+
+.section__title__outer-wrap {
+	overflow: hidden;
+}
+
+
+
+/*Accessibilty Updates*/
+.som-skip-links a:focus {
+    outline: 1px solid #fff;
+}
+
+.news-slider .slick-dots button {
+    background-color: #555;
+    color: #fff;
+}
+
+.news-slider .slick-dots .slick-active button {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ====== For Faculty Directory Page Layout Only ====== */
+.faculty-dir-detail > .body-wrap {background-color:#f0f0f0;}
+.faculty-dir-detail > .body-wrap > .container {
+    -webkit-box-shadow: -0px 0px 4px 2px rgba(32,32,32,0.24);
+    box-shadow: 0px 0px 4px 2px rgba(32,32,32,0.24);
+    padding: 5px 16px;
+    background-color: #fff!important;
+}
+.faculty-dir-detail #pnlFacultyDetail > .columns {
+    background-color: #00504d;
+    background-image: linear-gradient(130deg, #00504d 55%, #003432);
+}
+        
+.faculty-dir-detail #pnlFacultyDetail > .columns, .faculty-dir-detail #pnlFacultyDetail > .columns a {color:#fff!important;}
+.faculty-dir-detail .column#faculty-image {padding:0;}
+.faculty-dir-detail .column#contact-info {padding:2.1rem 1.909rem;}
+.faculty-dir-detail .text-feature__intro-para::before {display:none!important;}
+    /* Below are mobile-intended CSS codes I did not check */
+    .faculty-dir-detail .facultyexpdir-content .column.is-3 {
+        display:flex;
+        justify-content:center;
+    }
+    .faculty-dir-detail .column.is-3 > .imgleft {
+        width:100%!important;
+        padding-top: 2rem;
+    }
+    /* End Mobile-intended CSS; if not working, do not use this code or responsive code below */
+/* ====== end Faculty Directory Page Layout edits ====== */
+/* ---------------------------------- */
+/* RESPONSIVE.CSS CODE FOR FACULTY DIRECTORY PAGE LAYOUT */
+@media screen and (min-width: 768px) {
+    .faculty-dir-detail .facultyexpdir-content .column.is-3 {
+        display:block;
+        justify-content:unset;
+    }
+    .faculty-dir-detail .column.is-3 > .imgleft {
+        /*width:auto!important;*/
+        padding:0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
